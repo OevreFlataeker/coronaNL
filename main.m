@@ -26,7 +26,8 @@ zones = getzones('Netherlands') % what zones are there?
 
 %% Get the data
 
-zone = 'Netherlands';
+% Leave out zone for countries w/o zones
+zone = '';
 
 y = getinfections(country, zone);
 offset = 40; % start plots from march 1
